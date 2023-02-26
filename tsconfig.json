@@ -1,4 +1,12 @@
 {
-	"extends": "@releaseband/typescript-config",
-	"include": ["src/**/*", "vite.config.ts"]
+  "extends": "@releaseband/typescript-config",
+  "compilerOptions": {
+    "target": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "@v/components": ["src/components"],
+      "@v/contexts": ["src/contexts"]
+    }
+  },
+  "include": ["src/**/*", "vite.config.ts"]
 }
